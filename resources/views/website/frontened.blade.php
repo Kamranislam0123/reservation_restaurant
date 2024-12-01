@@ -11,14 +11,8 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <title>Klassy Cafe - Restaurant HTML Template</title>
-<!--
-    
-TemplateMo 558 Klassy Cafe
+    <title>Klassy Cafe - Restaurant</title>
 
-https://templatemo.com/tm-558-klassy-cafe
-
--->
     <!-- Additional CSS Files -->
     <link rel="stylesheet" type="text/css" href="{{asset('website/assets/css/bootstrap.min.css')}}">
 
@@ -29,6 +23,7 @@ https://templatemo.com/tm-558-klassy-cafe
     <link rel="stylesheet" href="{{asset('website/assets/css/owl-carousel.css')}}">
 
     <link rel="stylesheet" href="{{asset('website/assets/css/lightbox.css')}}">
+    
 
     </head>
     
@@ -100,7 +95,7 @@ https://templatemo.com/tm-558-klassy-cafe
                             {{-- <li class="scroll-to-section"><a href="#reservation">Dashboard</a></li> --}}
                             <li>
                                 @if (Route::has('login'))
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+                <div class="hidden fixed top-0 right-0 px-6  sm:block">
                     @auth
                         <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">{{ Auth::user()->name }}</a>
                     @else

@@ -207,7 +207,7 @@
         margin: 10,
         dots: false,
         nav: true,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 4500,
         navText: ["<i class='mdi mdi-chevron-left'></i>", "<i class='mdi mdi-chevron-right'></i>"],
         responsive: {
@@ -231,7 +231,7 @@
         dots: false,
         nav: true,
         rtl: isrtl,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 4500,
         navText: ["<i class='mdi mdi-chevron-right'></i>", "<i class='mdi mdi-chevron-left'></i>"],
         responsive: {

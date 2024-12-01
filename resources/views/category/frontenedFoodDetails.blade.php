@@ -31,7 +31,7 @@
                         @csrf
 
                         <input type="number" name='quantity' min="0" style="width:80px">
-                        <input type="submit" value="add cart">
+                        <input type="submit" value="add cart" class="btn btn-primary">
                         <a href="{{url('/showcart',Auth::user()->id)}}" class="btn btn-warning">view</a>
                     </form>
                 {{-- <form action="{{url('/addcart',$item->id)}}" method="POST"> --}}

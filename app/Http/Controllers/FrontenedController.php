@@ -64,12 +64,7 @@ class FrontenedController extends Controller
         return view('cart.showcart', compact('count', 'data', 'data2'));
     }
 
-    public function remove($id)
-    {
-        $data = Cart::find($id);
-        $data->delete();
-        return redirect()->back();
-    }
+   
 
     public function orderConfirm(Request $request)
     {
@@ -132,4 +127,17 @@ public function foodinCategory($id)
         $foods = Food::where('id',$id)->get();
         return view('category.frontenedFoodDetails',compact('foods'));
     }
+
+    public function remove($id)
+{
+    $data = Cart::where('id', $id)->where('user_id', Auth::id())->first();
+
+    if (!$data) {
+        return redirect()->back()->with('error', 'Item not found or unauthorized access!');
+    }
+
+    $data->delete();
+    return redirect()->back()->with('success', 'Item removed successfully!');
+}
+    
 }

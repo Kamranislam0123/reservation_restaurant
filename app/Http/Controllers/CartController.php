@@ -13,4 +13,9 @@ class CartController extends Controller
 
         return  view('foodCart.frontenedFoodCart',compact('cart'));
     }
+
+    
+    
+
+    
 }

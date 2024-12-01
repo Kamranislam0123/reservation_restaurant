@@ -4,11 +4,9 @@
         <div class="container">
             <h4>My cart</h4>
             <hr>
-    
             <div class="row">
                 <div class="col-md-12">
                     <div class="shopping-cart">
-
                         <div class="cart-header d-none d-sm-none d-mb-block d-lg-block">
                             <div class="row">
                                 <div class="col-md-6">
@@ -23,9 +21,7 @@
                                 <div class="col-md-1">
                                     <h4>Total</h4>
                                 </div>
-                                <div class="col-md-2">
-                                    <h4>Remove</h4>
-                                </div>
+                                
                             </div>
                         </div>
 

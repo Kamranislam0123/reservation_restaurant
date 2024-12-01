@@ -16,7 +16,7 @@
                 @foreach ($data as $item)
                 <form action="{{url('/addcart',$item->id)}}" method="POST">
                     @csrf
-                <div class="item">
+                <div class="item" style="padding-top: 10px;">
                     <div style="background-image: url('/foodimage/{{$item->image}}')" class='card card1'>
                         <div class="price"><h6>{{$item->price}}</h6></div>
                         <div class='info'>
@@ -28,72 +28,18 @@
                         </div>
                     </div>
 
-                    <input type="number" name='quantity' min="0" style="width:80px">
-                    <input type="submit" value="add cart">
+                    <!-- Add padding around input and button -->
+                    <div style="padding: 5px;">
+                        <input type="number" name='quantity' min="0" style="width:80px; padding: 5px; margin-right: 10px;">
+                        <input type="submit" value="Add to Cart" class="btn btn-primary" style="padding: 10px 10px;">
+                    </div>
                 </div>
             </form>
                 @endforeach
-                {{-- <div class="item">
-                    <div class='card card2'>
-                        <div class="price"><h6>$22</h6></div>
-                        <div class='info'>
-                          <h1 class='title'>Klassy Pancake</h1>
-                          <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme.</p>
-                          <div class="main-text-button">
-                              <div class="scroll-to-section"><a href="#reservation">Make Reservation <i class="fa fa-angle-down"></i></a></div>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class='card card3'>
-                        <div class="price"><h6>$18</h6></div>
-                        <div class='info'>
-                          <h1 class='title'>Tall Klassy Bread</h1>
-                          <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme.</p>
-                          <div class="main-text-button">
-                              <div class="scroll-to-section"><a href="#reservation">Make Reservation <i class="fa fa-angle-down"></i></a></div>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class='card card4'>
-                        <div class="price"><h6>$10</h6></div>
-                        <div class='info'>
-                          <h1 class='title'>Blueberry CheeseCake</h1>
-                          <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme.</p>
-                          <div class="main-text-button">
-                              <div class="scroll-to-section"><a href="#reservation">Make Reservation <i class="fa fa-angle-down"></i></a></div>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class='card card5'>
-                        <div class="price"><h6>$8.50</h6></div>
-                        <div class='info'>
-                          <h1 class='title'>Klassy Cup Cake</h1>
-                          <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme.</p>
-                          <div class="main-text-button">
-                              <div class="scroll-to-section"><a href="#reservation">Make Reservation <i class="fa fa-angle-down"></i></a></div>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class='card card3'>
-                        <div class="price"><h6>$7.25</h6></div>
-                        <div class='info'>
-                          <h1 class='title'>Klassic Cake</h1>
-                          <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme.</p>
-                          <div class="main-text-button">
-                              <div class="scroll-to-section"><a href="#reservation">Make Reservation <i class="fa fa-angle-down"></i></a></div>
-                          </div>
-                        </div>
-                    </div>
-                </div> --}}
+                
             </div>
         </div>
     </div>
 </section>
+
+

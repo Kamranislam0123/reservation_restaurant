@@ -32,7 +32,12 @@ Route::get('/',[FrontenedController::class,'home']);
 // Route::get('/',[FrontenedController::class,'category']);
 Route::post('/addcart/{id}',[FrontenedController::class,'addcart']);
 Route::get('/showcart/{id}',[FrontenedController::class,'showcart']);
-Route::get('/remove/{id}',[FrontenedController::class,'remove']);
+Route::get('/remove/{id}', [FrontenedController::class, 'remove'])->name('remove');
+
+
+
+
+
 
 Route::post('/orderconfirm',[FrontenedController::class,'orderConfirm']);
 Route::post('showcart/Send/{id}',[FrontenedController::class,'mailInvoice']);

@@ -36,7 +36,7 @@
 	})
 
 	$(".Modern-Slider").slick({
-	    autoplay:true,
+	    autoplay:false,
 	    autoplaySpeed:10000,
 	    speed:600,
 	    slidesToShow:1,
@@ -83,7 +83,7 @@
 		loop:true,
 		dots: true,
 		nav: true,
-		autoplay: true,
+		autoplay: false,
 		margin:30,
 		  responsive:{
 			  0:{
